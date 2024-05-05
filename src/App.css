@@ -1,0 +1,14 @@
+*{
+  font-family: 
+  "Mona Sans",
+  "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
+ 
+}
+.cardhover:hover{
+  cursor: pointer;
+  
+}
+
