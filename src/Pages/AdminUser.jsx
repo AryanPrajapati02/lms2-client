@@ -9,7 +9,7 @@ const {authorizationToken} = useAuth()
 const [user , setUser] = useState([]);
 const getAllUserData = async()=>{
     try{
-        const res = await fetch('https://lms2-server-q6jg.vercel.app/admin/user',{
+        const res = await fetch('https://lms2-server.onrender.com/admin/user',{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const getAllUserData = async()=>{
 }
 
 const deleteUser = async (id)=>{
-    const res = await fetch(`https://lms2-server-q6jg.vercel.app/admin/user/delete/${id}`,{
+    const res = await fetch(`https://lms2-server.onrender.com/admin/user/delete/${id}`,{
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',

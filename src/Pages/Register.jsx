@@ -64,7 +64,7 @@ function Register() {
     toast.loading('Registering...', {
       duration: 800,
     })
-    const response = await fetch("https://lms2-server-q6jg.vercel.app/api/auth/register", {
+    const response = await fetch("https://lms2-server.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

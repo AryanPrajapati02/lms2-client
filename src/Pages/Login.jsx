@@ -32,7 +32,7 @@ function Login() {
   console.log(formData);
   try{
    
-    const response = await fetch("https://lms2-server-q6jg.vercel.app/api/auth/login", {
+    const response = await fetch("https://lms2-server.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

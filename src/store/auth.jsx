@@ -26,7 +26,7 @@ const authorizationToken = `Bearer ${token}`
   const userAuthentication =async ()=>{
   try{
     setIsLoading(true)
-  const response = await fetch('https://lms2-server-q6jg.vercel.app/api/auth/user' , {
+  const response = await fetch('https://lms2-server.onrender.com/api/auth/user' , {
       method: 'GET',
       headers: {
         
@@ -48,7 +48,7 @@ const authorizationToken = `Bearer ${token}`
   }
   const getServices =async ()=>{
   try{
-    const response = await fetch('https://lms2-server-q6jg.vercel.app/api/service', {
+    const response = await fetch('https://lms2-server.onrender.com/api/service', {
         method: 'GET',
        
     })

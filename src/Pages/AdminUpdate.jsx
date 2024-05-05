@@ -13,7 +13,7 @@ function AdminUpdate() {
     const {authorizationToken} = useAuth()
    
 const getSingleUserData = async ()=>{
-    const res = await fetch(`https://lms2-server-q6jg.vercel.app/admin/user/update/${params.id}`,{
+    const res = await fetch(`https://lms2-server.onrender.com/admin/user/update/${params.id}`,{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ useEffect(()=>{
     }
     const handleSubmit = async (e)=>{
         e.preventDefault();
-        const res = await fetch(`https://lms2-server-q6jg.vercel.app/admin/user/update/${params.id}`,{
+        const res = await fetch(`https://lms2-server.onrender.com/admin/user/update/${params.id}`,{
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
