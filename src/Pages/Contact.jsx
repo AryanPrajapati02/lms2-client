@@ -30,7 +30,7 @@ if(userData && user){
     e.preventDefault()
    
   try{
-    const data = await fetch('http://localhost:3000/api/contact' ,{
+    const data = await fetch('https://lms2-server-q6jg.vercel.app/api/contact' ,{
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
