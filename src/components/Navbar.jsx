@@ -6,6 +6,7 @@ import { useAuth } from '../store/auth'
 function Navbar() {
 
   const {isLoggedIn} = useAuth();
+  const {user} = useAuth();
   // console.log(isLoggedIn)
 
   // const [loggin , setLoggin] = useState(isLoggedIn)
@@ -203,7 +204,7 @@ function Navbar() {
 </Link> */}
 
 
-{isLoggedIn ? (<Link to="/logout">
+{isLoggedIn ? (<div><Link to="/logout">
 <button>
 <div className=" w-full h-30 flex items-center justify-center cursor-pointer mr-5 ">
   <div
@@ -256,7 +257,9 @@ function Navbar() {
 </div>
 
 </button>
-</Link>) : (<div className='p-5 flex items-center justify-between'>
+</Link>
+{user.name}
+</div>) : (<div className='p-5 flex items-center justify-between'>
   <Link to="/login">
 <button>
 <div className=" w-full h-30 flex items-center justify-center cursor-pointer mr-5 ">
