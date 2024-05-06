@@ -17,17 +17,8 @@ function Navbar() {
 // const [name ,setName] = useState(null)
 
 
-const Changename = ()=>{
-  if(user){
-    return user.name
-  }
-  else{
-    return "User"
-  }
-
-}
   useEffect(()=>{
-   Changename()
+   console.log(user.name)
   })
 
   
