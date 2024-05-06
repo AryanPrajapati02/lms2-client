@@ -224,7 +224,7 @@ function Navbar() {
 
 </button>
 </Link> */}
-
+{user.isAdmin ?("admin"): ("normal")}
 
 {isLoggedIn ? (<div>
  <span className='text-xl font-medium text-[#FF543E]'>{user.name}</span>
