@@ -205,7 +205,7 @@ function Navbar() {
 
 
 {isLoggedIn ? (<div>
- <span className='text-xl font-medium '>{user.name}</span>
+ <span className='text-xl font-medium text-[#FF543E]'>{user.name}</span>
   <Link to="/logout">
 <button>
 <div className=" w-full h-30 flex items-center justify-center cursor-pointer mr-5 ">
