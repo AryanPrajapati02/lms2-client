@@ -14,6 +14,14 @@ function Navbar() {
   //   setLoggin(isLoggedIn)
   //   console.log(isLoggedIn)
   // } ,[loggin])
+const [name ,setName] = useState(null)
+
+
+  useEffect(()=>{
+    if(user){
+      setName(user.name)
+    }
+  })
 
   
   return (
