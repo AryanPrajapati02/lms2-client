@@ -17,11 +17,11 @@ function Navbar() {
 // const [name ,setName] = useState(null)
 
 
-//   useEffect(()=>{
-//     if(user){
-//       setName(user.name)
-//     }
-//   })
+  useEffect(()=>{
+    if(user){
+      setName(user.name)
+    }
+  }, [name])
 
   
   return (
