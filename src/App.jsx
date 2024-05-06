@@ -39,4 +39,7 @@ function App() {
   )
 }
 
+// https://lms2-client-gd3o.vercel.app/
+// https://lms2-server.onrender.com/
+
 export default App
