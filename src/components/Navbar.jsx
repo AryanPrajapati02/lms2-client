@@ -204,7 +204,9 @@ function Navbar() {
 </Link> */}
 
 
-{isLoggedIn ? (<div><Link to="/logout">
+{isLoggedIn ? (<div>
+ <span className='text-xl font-medium '>{user.name}</span>
+  <Link to="/logout">
 <button>
 <div className=" w-full h-30 flex items-center justify-center cursor-pointer mr-5 ">
   <div
@@ -258,7 +260,7 @@ function Navbar() {
 
 </button>
 </Link>
-{user.name}
+
 </div>) : (<div className='p-5 flex items-center justify-between'>
   <Link to="/login">
 <button>
