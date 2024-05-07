@@ -63,7 +63,7 @@ const authorizationToken = `Bearer ${token}`
   }
 
     useEffect(()=>{
-      storetokenINLS();
+      
         getServices();
          userAuthentication();
     }, [])
