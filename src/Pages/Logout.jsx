@@ -8,7 +8,7 @@ export const Logout =()=>{
 
     useEffect(()=>{
         LogoutUser()
-    } , [LogoutUser]);
+    } );
 
     return(
         <>
